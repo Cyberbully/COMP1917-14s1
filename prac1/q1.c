@@ -1,6 +1,9 @@
 /*
     Complete the maxInArray function, which, given an array of N numbers
-    prints out the maximum of that array
+    prints out the maximum number of that array
+    
+    if there are no numbers in the array, return the smallest number possible
+    (though for ease, this case will NOT be tested)
 
     you can test your submission using:
     ./mark q1
