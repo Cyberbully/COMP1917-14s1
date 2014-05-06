@@ -1,8 +1,9 @@
 /*
     common exam question
-    given an array, find whether or not the array is non-decreasing in length 
-    (so 2 2 3 is non-decreasing, 2 3 4 is non-decreasing, 2 3 2 is decreasing 
-    [non-non decreasing]
+    find whether a sequence in an array is increasing
+    1 2 2 is increasing
+    1 2 3 is increasing
+    1 2 1 is not increasing
     please do this in the isIncreasing function
 
     you can test your submission using:

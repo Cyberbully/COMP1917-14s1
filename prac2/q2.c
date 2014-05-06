@@ -1,6 +1,6 @@
 /*
     given a finitely long string, return the number of whitespace characters
-    white space characters are anything defined in the "whitespace" array
+    whitespace is { ' ', '\t', '\n' }
 
     example, if a.txt contains "abc def<tab>c", it should look like
     stuff@you: ./q2 < a.txt
