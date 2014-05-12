@@ -5,7 +5,7 @@
  * Little bear might have the biggest bowl, when he wants the smallest.
  * Mother bear might have the smallest bowl, when she wants the one in between.
  * Papa bear might have the middle-biggest bowl, but he wants the largest.
- * Given the numberic value as an integer that quantifies how much is in each bowl,
+ * Given the numeric value as an integer that quantifies how much is in each bowl,
  * assign each bear to have the correct bowl! (note they may be in any order)
  *
  * mark using "./mark q1"

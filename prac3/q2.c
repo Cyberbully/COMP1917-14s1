@@ -1,6 +1,6 @@
 /*
  * given a string, return a NEW string
- * with the strings reversed (hint: malloc)
+ * with the string reversed (hint: malloc)
  *
  * mark with "./mark q2" 
  * compile and run with "./mark q2" and then "./q2"
