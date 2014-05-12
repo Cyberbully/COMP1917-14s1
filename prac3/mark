@@ -30,7 +30,7 @@ do
         done
         echo "= Your Output ="
         ./$arg < $f
-        ./$arg < $f > $f.out # answer generation!
+        #./$arg < $f > $f.out # answer generation!
         ./$arg < $f > tmp.file
         if ! diff tmp.file $f.out > /dev/null; then
             echo "== [ERROR] expected output =="

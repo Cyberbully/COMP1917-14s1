@@ -1,9 +1,6 @@
-/*
- * given a string, return a NEW string
- * with the string reversed (hint: malloc)
- *
- * mark with "./mark q2" 
- * compile and run with "./mark q2" and then "./q2"
+/* given a string, find it's length, excluding the new line character
+ * DO NOT USE strlen
+ * mark submissions using "./mark q2"
  */
 
 #include <stdio.h>
@@ -12,21 +9,17 @@
 
 #define MAX_SIZE 128
 
-char *reverse(char *string);
+int strlength(char *str);
 
-/* do not edit this function */
+/* do not edit this */
 int main(void) {
     char string[MAX_SIZE] = { 0 };
     fgets(string, MAX_SIZE - 1, stdin);
     // kill new line - don't worry too much about this
     string[strlen(string) - 1] = 0;
-    char *a = reverse(string);
-    printf("original: %s\n", string);
-    printf("reversed: %s\n", a);
-    free(a); // more malloc hint
+    printf("length: %d\n", strlength(string));
     return EXIT_SUCCESS;
 }
 
-/* reversed string */
-char *reverse(char *string) {
+int strlength(char *str) {
 }
