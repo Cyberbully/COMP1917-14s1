@@ -31,12 +31,67 @@ void printList(Node first) {
     printf("X\n");
 }
 
-int main(void) {
-    Node first = createNode(5);
-/*  Node second = createNode(7);*/
-    first->next = createNode(7);
-    first->next->next = createNode(8);
-    printList(first->next);
+void freeList(Node first) {
+    Node curr = first;
+    while (curr != NULL) {
+        Node temp = curr->next;
+        free(curr);
+        curr = temp;
+    }
+}
+
+Node generateNodes(int n) {
+    Node first = NULL;
+    if (n >= 0) {
+        first = createNode(0);
+        Node curr = first;
+        int i = 1;
+        while (i <= n) {
+            curr->next = createNode(i);
+            curr = curr->next;
+            i++;
+        }
+    }
+    return first;
+}
+
+Node insertNodeAtPosition(Node first, Node insert, int k) {
+    if (k == 0) {
+        insert->next = first;
+        first = insert;   
+    } else {
+        int i = 0;
+        Node curr = first;
+        while (i < k - 1) {
+            i++;
+            curr = curr->next;
+        }
+        insert->next = curr->next;
+        curr->next = insert;
+    }
+    return first;
+}
+
+/* delete node at position k */
+Node deleteAtPosition(Node first, int k) ;
+/* put the back element at the front */
+Node backToFront(Node first);
+/* put the front element at the back */
+Node frontToBack(Node first);
+/* reverse the linked list */
+Node reverse(Node first);
+/* given two lists of equal size, zip em
+   [1]->[2]->[X]
+   [4]->[5]->[X]
+   becomes [1]->[4]->[2]->[5]->[X}
+*/
+Node zipLists(Node first, Node second);
+
+int main(void) {    
+    Node first = generateNodes(5);
+    first = insertNodeAtPosition(first, createNode(100), 0);
+    printList(first);
+    freeList(first);
     //printf("%d\n", first->next->next->next->data);
     return 0;
 }

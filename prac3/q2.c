@@ -1,4 +1,4 @@
-/* given a string, find it's length, excluding the new line character
+/* given a string, find it's length
  * DO NOT USE strlen
  * mark submissions using "./mark q2"
  */
