@@ -1,0 +1,5 @@
+(5 marks)
+
+You will need to use the 8004 microprocessor flash for this question.
+
+Write a program that prints out a string starting at 0x50 until it finds a 0x00 character.

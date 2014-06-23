@@ -1,0 +1,23 @@
+Section C - Oh - you’re in for it now! (24 marks)
+
+11. Create two ADT’s for a stack using an array of size MAX_LENGTH (you can #define this in a function of your choosing). You should prepare three files:
+Stack.h
+Stack.c
+testStack.c
+(14 marks)
+
+12. Note there is a problem in that the stack is bounded. Describe how you would implement a stack that is potentially unbounded - as well as what should be changed, what stays the same and why.
+
+Note NO CODE IS REQUIRED.
+
+(6 marks)
+
+13. Explain in plain English how you could use the Stack ADT to determine a string has balanced brackets (brackets include “({[]})”).
+
+For example,
+{{a}} is balanced
+{{}a} is balanced
+[(]) is not balanced.
+[][]{}{{[]}} is balanced.
+
+(4 marks)
