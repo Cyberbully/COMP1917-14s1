@@ -61,8 +61,8 @@ d. printf(“%d”, *p + *q * n);
 9. Explain where each of the variables in the following functions would be in memory. (4 marks)
 
 void foo(int a) { 
-int b = 2; 
-char *c = “HELLO WORLD!”;
+    int b = 2; 
+    char *c = “HELLO WORLD!”;
     char  *d = malloc(1000);
 }
 
