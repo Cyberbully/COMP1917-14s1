@@ -1,4 +1,4 @@
-Section A - Can you read 1337? (14 marks)
+Section A - Can you read 1337? you can multiple guess otherwise. (14 marks)
 
 1. What does the following code output? (2 marks)
 #include <stdio.h>
@@ -57,20 +57,20 @@ int main(void) {
 
 4. What does the following code do if I use mystery(“420”) (3 marks)
 int mystery(char* s) {
-     int a = strlen(pStr) - 1;
+    int a = strlen(pStr) - 1;
     int num = 0;
     while (a >= 0) {
         num *= 10;
         num += s - ‘0’;
+    }
+    return num;
 }
-return num;
- }
 
     [A] it doesn’t compile
     [B] returns number 420
     [C] returns number 24
     [D] returns number [4200 + (0 - ‘0’)]
-[E] None of the above. 
+    [E] None of the above. 
 
 
 5.. What does the following code print out? (4 marks)
