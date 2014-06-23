@@ -29,7 +29,7 @@ void theAnswerIsC(char *a) {
 
 int main(void) {
     char a[10];
-    printf(“%d “, sizeof(a));
+    printf(“%d“, sizeof(a));
     theAnswerIsC(a);
     return 0;
 }
