@@ -39,7 +39,7 @@ int main(void) {
     return 0;
 }
 
-8. Here is a hex dump of memory. Assume I have a character pointer ‘c’ that points to the address 0x402. What would this print out? (4 marks)
+8. Here is a hex dump of memory. Assume I have a character pointer ‘c’ that points to the address 0x402. What would printf("%s", c) print out? (4 marks)
 
 0x400: 0x4e 0x4f 0x62 0x75 
 0x404: 0x63 0x6b 0x6c 0x61 
@@ -56,9 +56,9 @@ a. *p =  25;
 b. *q = 24;
 c.  q =  p;
 d. *q =  8;
-d. printf(“%d”, *p + *q * n);
+e. printf(“%d”, *p + *q * n);
 
-9. Explain where each of the variables in the following functions would be in memory. (4 marks)
+9. Explain where each of the variables in the following function would be in memory. (4 marks)
 
 void foo(int a) { 
     int b = 2; 
