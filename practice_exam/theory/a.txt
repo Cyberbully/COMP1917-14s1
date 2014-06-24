@@ -61,7 +61,8 @@ int mystery(char* s) {
     int num = 0;
     while (a >= 0) {
         num *= 10;
-        num += s - ‘0’;
+        num += s[a] - ‘0’;
+        a--;
     }
     return num;
 }
