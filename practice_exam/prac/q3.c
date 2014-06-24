@@ -12,7 +12,7 @@
 
 #define MAX_SIZE 128
 
-void devowel(char *string);
+void lolscammed(char *string);
 
 /* do not edit this function */
 int main(void) {
@@ -20,13 +20,12 @@ int main(void) {
     fgets(string, MAX_SIZE - 1, stdin);
     // kill new line - don't worry too much about this
     string[strlen(string) - 1] = 0;
-    devowel(string);
-    printf("devoweled: %s\n", string);
+    lolscammed(string);
+    printf("%s\n", string);
     return EXIT_SUCCESS;
 }
 
-/* devowel string */
-void devowel(char *string) {
-    
-}
+/* lolscammed string */
+void lolscammed(char *string) {
+
 
